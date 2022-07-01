@@ -4,10 +4,12 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { SellModule } from './features/sell/sell.module';
 import { SharedModule } from './shared/shared.module';
+import {  ListaComponent } from './features/colaboradores/lista';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ListaComponent
   ],
   imports: [
     BrowserModule,
