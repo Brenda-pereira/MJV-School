@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductsComponent implements OnInit {
 
+  exibeProduto = true
+
   titulo = "Produtos";
 
   produto = {
@@ -22,8 +24,29 @@ export class ProductsComponent implements OnInit {
     console.log("teste");
   }
 
-  precoComDesconto (preco: number) {
+  precoComDesconto(preco: number) {
     return preco * 0.90;
+
+  }
+  obterPrecoDesconto() {
+    this.produto.preco = this.produto.preco * 0, 90;
+  }
+  compra() {
+    alert("Produto comprado com sucesso")
+  }
+  clicouTag() {
+    alert("vocë passou o mouse em cima de uma tag");
+  }
+  passouMause() {
+    alert("voc¨we passou o mouse em cima de uma tag");
+  }
+
+  pressionouTecla(event: any) {
+    console.log(event.target.value)
+  }
+
+  exibeProdutoSimNao() {
+    this.exibeProduto = !this.exibeProduto
   }
 
 }
