@@ -7,19 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListaComponent implements OnInit {
 
-    titulo = "Lista de Colaboradores"; 
-    
-    colaborador = {
-       id:7,
-       nome: "Nathan Carlos Exercicio", 
-       salario: 4500, 
-       cargo: "Dev Pl",
-       imagem: "src\assets\colaborador.jfif"
-      };
-};
-  
-  constructor() {}
+  titulo = "Colaboradores";
 
-  ngOnInit() {
-  }
+constructor() {}
+
+ngOnInit(): void {
+
+};
+
+colaborador = {
+  id: 7,
+  nome: "Nathan Carlos Exercicio",
+  salario: 4500,
+  cargo: "Dev Pl",
+  imagem: " ./assets/colaborador.webp"
+}
 }
