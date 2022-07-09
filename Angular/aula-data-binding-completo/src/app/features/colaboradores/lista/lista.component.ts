@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { NavigationBehaviorOptions } from '@angular/router';
 
 @Component({
   selector: 'app-lista',
@@ -8,19 +7,19 @@ import { NavigationBehaviorOptions } from '@angular/router';
 })
 export class ListaComponent implements OnInit {
 
-    titulo = "lista de colaboradores"; 
-    
-    colaboradores = {
+  titulo = "Colaboradores";
 
-    colaborador: "Nathan",
-    idade: 18,
-    profissão:"dev pl" 
+constructor() {}
+
+ngOnInit(): void {
 
 };
-  
-  constructor() {}
 
-  ngOnInit() {
-  }
-
+colaborador = {
+  id: 7,
+  nome: "Nathan Carlos Exercicio",
+  salario: 4500,
+  cargo: "Dev Pl",
+  imagem: " ./assets/colaborador.webp"
+}
 }
